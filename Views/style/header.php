@@ -24,13 +24,6 @@
                         <li><a href="contact.php">Contact us</a></li>
                         <li><a href="profile.php">Contact us</a></li>
                         <div class="navlog">
-                            <form action="loginindex" method="POST">
-                                <div class="navinpout">
-                                    <input type="text" name="uid" placeholder="Username">
-                                    <input type="password" name="pass" placeholder="Password">
-                                </div>
-                                <button type="submit" name="login" id="navbtn">Login</button>
-                            </form>
                         </div>
                     </ul>
                 </div>
