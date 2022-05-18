@@ -19,7 +19,7 @@
                 <div class="brand">Scammer book</div>
                 <div class = "navbar-links">
                     <ul>
-                        <li><a href="index.php">Home</a></li>
+                        <li><a href="login-index.php">Home</a></li>
                         <li><a href="about.php">About us</a></li>
                         <li><a href="contact.php">Contact us</a></li>
                         <li><a href="profile.php">Contact us</a></li>
