@@ -1,11 +1,9 @@
 <?php
-    require 'style/header.php'; 
-    include 'includes/Open-db.php';
+    //require 'style/header.php'; 
+    //include 'includes/Open-db.php';
 
-<<<<<<< HEAD
     global $Tool;
-=======
->>>>>>> 35c292d8f63dc8fdacf4bde9ed3b96766cb455f1
+
     $sql = 'SELECT * FROM comment';
     $result = mysqli_query($connect,$sql);
     $comment = mysqli_fetch_all($result, MYSQLI_ASSOC);
@@ -34,11 +32,6 @@
                 
                                       
                     <?php
-<<<<<<< HEAD
-                    
-=======
-                    Sleep(5);
->>>>>>> 35c292d8f63dc8fdacf4bde9ed3b96766cb455f1
                     $count = 0;
                     foreach($comment as $comm){
                         if($comm['scamer'] == $_GET['search']){
