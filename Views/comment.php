@@ -1,12 +1,16 @@
 <?php
     require 'style/header.php'; 
     include 'includes/Open-db.php';
-  
-    $Tool = $_GET['search'];
+
+<<<<<<< HEAD
+    global $Tool;
+=======
+>>>>>>> 35c292d8f63dc8fdacf4bde9ed3b96766cb455f1
     $sql = 'SELECT * FROM comment';
     $result = mysqli_query($connect,$sql);
     $comment = mysqli_fetch_all($result, MYSQLI_ASSOC);
     mysqli_free_result($result);
+    $Tool = "";
 
 ?>
 
@@ -30,13 +34,21 @@
                 
                                       
                     <?php
+<<<<<<< HEAD
+                    
+=======
+                    Sleep(5);
+>>>>>>> 35c292d8f63dc8fdacf4bde9ed3b96766cb455f1
+                    $count = 0;
                     foreach($comment as $comm){
-                        if($comm['scamer'] == $Tool){
+                        if($comm['scamer'] == $_GET['search']){
                         echo '('.$comm['scamer'].') '.$comm['comment'];
                         echo "</br>";
                         echo "</br>";
+                        $count++;
                         }
-                        elseif($comm['scamer'] != $Tool){
+                    }
+                    if($count == 0){
                             
                         echo "<h3>"; 
                         echo 'The Number Is  Not Define In Our Record.</br>if you want you can</br> report him just prees on this button';
@@ -44,8 +56,7 @@
                         echo '<button type = "submit"><a href = report.php> Report </a></button>';
                         echo "</h3>";
 
-                        break;
-                        }
+                        
                     }
                     ?>  
                    
